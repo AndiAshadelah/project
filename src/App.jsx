@@ -21,7 +21,7 @@ function App() {
     <MusicContext.Provider value={{ isPlaying, playMusic }}>
       <Router>
         {/* Audio tetap hidup di sini meskipun page berganti */}
-        <audio ref={audioRef} src="/music.flac" loop />
+        <audio ref={audioRef} src="/music.m4a" loop />
         
         <Routes>
           <Route path="/" element={<Passcode />} />
@@ -38,5 +38,6 @@ function App() {
     </MusicContext.Provider>
   )
 }
+
 
 export default App;
